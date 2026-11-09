@@ -1,0 +1,18 @@
+/* 問題文のみ左へ寄せ、選択肢の左位置は既存設定を維持します。 */
+.question-text{line-height:1.7;overflow-wrap:anywhere;}
+@media(max-width:600px){
+ #startScreen input[type="text"]{width:min(100%,360px);min-height:48px;}
+ #startScreen>button{width:min(100%,360px);min-height:48px;}
+ #startScreen .capture-setup input{max-width:100%;}
+ #examForm .question-text{margin-left:-8px;}
+ #examForm .group-parent .question-text{margin-left:-12px;}
+ #examForm .question>label{min-height:48px;padding-top:8px;padding-bottom:8px;box-sizing:border-box;line-height:1.6;overflow-wrap:anywhere;}
+ #examForm input[type="radio"]{width:22px;height:22px;flex-shrink:0;}
+ #examForm textarea{font-size:18px;min-height:132px;line-height:1.6;}
+ #examForm label:has(input:checked){background:#edf4ff;outline:2px solid #2a5298;border-radius:5px;}
+ footer{padding-bottom:max(10px,env(safe-area-inset-bottom));}
+ footer>button{width:min(100%,420px);min-height:48px;}
+ .answer-actions>button,#captureResult button{min-height:48px;max-width:100%;}
+ #warningOverlay{box-sizing:border-box;padding:16px;}
+ #warningOverlay button{min-height:48px;}
+}
